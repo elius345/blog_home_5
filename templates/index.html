@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>in my every new project, browser donot show html</h1>
+    {% for blog in blogobject %}
+    <h1>{{ blog.title}}</h1>
+    <p>{{ blog.details}}</p>
+    {% endfor %}
+    <p></br>blog_home_5</p>
+    
 </body>
 </html>
